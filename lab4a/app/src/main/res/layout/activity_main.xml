@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="12pt"
+        android:layout_marginRight="12pt"
+        android:layout_marginTop="4pt">
+        <EditText
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6pt"
+            android:id="@+id/EditText01"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal">
+        </EditText>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6pt"
+            android:id="@+id/EditText02"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="4pt"
+        android:layout_marginLeft="6pt"
+        android:layout_marginRight="6pt">
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:onClick="Plus"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus" />
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:onClick="Minus"
+            android:scaleType="fitCenter"
+            android:src="@drawable/minus" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="4pt"
+        android:layout_marginLeft="6pt"
+        android:layout_marginRight="6pt">
+        <ImageButton
+            android:id="@+id/multiply"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:baselineAlignBottom="true"
+            android:onClick="Multiply"
+            android:scaleType="fitCenter"
+            android:src="@drawable/multiply" />
+        <ImageButton
+            android:id="@+id/divide"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:onClick="Divide"
+            android:scaleType="fitCenter"
+            android:src="@drawable/divide" />
+    </LinearLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="6pt"
+        android:layout_marginRight="6pt"
+        android:textSize="12pt"
+        android:layout_marginTop="4pt"
+        android:id="@+id/displayResult"
+        android:gravity="center_horizontal">
+    </TextView>
+</LinearLayout>
